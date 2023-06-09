@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mina:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+.mainheader{
+    background: linear-gradient(90deg, rgb(193, 255, 212) 0%, rgb(255, 255, 235) 49%, rgb(255, 197, 197) 100%);
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    background-color: #151418;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c50000;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .logo a span {
+    color: #008839;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #181818;
+  }
+  
+  .menu:hover a {
+    opacity: 0.4;
+  }
+  
+  .menu a:hover {
+    opacity: 1;
+    color: #000000;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+  }
+  
+ 
+
+  .herosection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+  .hbLeft{
+    position: relative;
+    width: 60%;
+}
+
+.hbRight{
+    width: 40%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hbRight img{
+    width: 450px;
+    margin-top: 20px;
+}
+
+.hh1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #111111;
+    font-family: 'Black Ops One', cursive;
+}
+
+.searchSec{
+    width: 99%;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    background: white;
+    width: 500px;
+    height: 40px;
+}
+
+.bar input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-family: 'Mina', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.buttonOfs{
+    width: 100px;
+    background: #00a76c;
+    text-align: center;
+    padding: 8px 10px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.secbtn{
+    background: #ac0000;
+}
+
+
+
+.searchPopular{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.searchPopular b{
+    color: #fff;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.searchPopular span{
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    padding: 1px 16px;
+    font-family: mina;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hbLeft p{
+    position: absolute;
+    max-width: 500px;
+    bottom: 10%; 
+    left: 20%;
+    color: rgb(54, 54, 54);
+    font-family: mina;
+}
+
+
+
+
+
+  /* Dashboard Csss */
+
+  .dashboard{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .lostthings{
+    background: linear-gradient(90deg, rgb(238, 238, 238) 0%, rgb(255, 75, 75) 49%, rgb(235, 235, 235) 100%);
+    width: 50%;
+    padding: 20px;
+  }
+
+  .lostthings h2{
+    color: #c90000;
+  }
+
+  .allthings{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .singlethins{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .thingsthumb{
+    width: 50%;
+  }
+
+  .thingsthumb img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .thingsinfo{
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .thingsinfo h3{
+    font-size: 17px;
+    color: #db0000;
+    font-family: 'mina';
+  }
+
+  .thingsinfo p{
+    color: #363636;
+    font-size: 14px;
+    font-family: 'mina';
+  }
+
+  .foundthings{
+    width: 50%;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(0, 83, 4, 0.521) 49%, rgb(255, 255, 255) 100%);
+    width: 50%;
+    padding: 20px;
+  }
+
+  .foundthings h2{
+    color: #007038;
+  }
+
+  .foundthings .allthings .singlethins .thingsinfo h3{
+    color: #00a76c;
+  }
+
+  .thingsinfo:hover{
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 248, 188) 49%, rgb(255, 239, 239) 100%);
+  }
+
+  .thingsinfo:hover  p {
+    color: #141414;
+  }
+
+
+  /* Foooter Design */
+
+
+  .foooter{
+    background-color: #1a1a1a;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .foooter ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+
+  .foooter ul li{
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .copyright{
+    color: #d6d6d6;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #4d4d4d;
+  }
+
+
+
+  @media only screen and (max-width: 950px) {
+
+    .hbLeft p{
+        display: none;
+    }
+
+    .mainheader{
+        padding-bottom: 50px;
+    }
+
+    .menu {
+      flex-direction: column;
+      background: linear-gradient(90deg, rgba(194, 255, 214, 0.521) 0%, rgba(58, 58, 58, 0) 49%, rgba(20, 20, 20, 0) 100%);
+      align-items: start;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu a {
+      margin-left: 12px;
+    }
+  
+    .menu li {
+      margin-bottom: 10px;
+    }
+  
+    .menu-icon {
+      display: block;
+      color: #141414;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .herosection{
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .hbLeft{
+        width: 100%;
+    }
+    
+    .hbRight{
+        display: none;
+    }
+
+    .dashboard{
+        display: block;
+    }
+
+    .lostthings{
+        width: 100%;
+        padding: 0;
+    }  
+
+    .foundthings{
+        width: 100%;
+        padding: 0;
+      }
+  }
